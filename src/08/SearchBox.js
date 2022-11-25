@@ -10,6 +10,7 @@ function SearchBox({ data }) {
   }, [searchKey, data]);
 
   const handleSearch = useCallback((evt) => {
+    console.log(13)
     window.history.pushState(
       {},
       "",

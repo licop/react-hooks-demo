@@ -17,7 +17,7 @@ export default function SearchUserList() {
     if (!users) return null;
     return users.data.filter((user) => user.first_name.includes(searchKey));
   }, [users, searchKey]);
-
+  
   return (
     <div>
       <input

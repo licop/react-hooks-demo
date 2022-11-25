@@ -10,7 +10,10 @@ const MyRouter = ({ children }) => {
     children.map((c) => c.props),
     "path",
   );
+  
+  
   const [hash] = useHash();
+  console.log(children, routes, hash, 16)
   const Page = routes[hash.replace("#", "")]?.component;
   return Page ? <Page /> : "Not found.";
 };

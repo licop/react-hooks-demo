@@ -1,3 +1,7 @@
+// 使用 render props 模式重用 UI 逻辑
+// render props是react开发中非常重要的设计模式
+// render props 就是把一个 render 函数作为属性传递给某个组件，由这个组件去执行这个函数从而 render 实际的内容。
+
 import { Popover } from "antd";
 import data from "./data";
 

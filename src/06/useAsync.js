@@ -26,3 +26,4 @@ export default (asyncFunction) => {
 
   return { execute, loading, data, error };
 };
+

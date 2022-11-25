@@ -8,6 +8,7 @@ const getPosition = () => {
     y: document.body.scrollTop,
   };
 };
+
 const useScroll = () => {
   // 定一个 position 这个 state 保存滚动条位置
   const [position, setPosition] = useState(getPosition());
@@ -24,6 +25,7 @@ const useScroll = () => {
   }, []);
   return position;
 };
+
 
 function ScrollTop() {
   const { y } = useScroll();

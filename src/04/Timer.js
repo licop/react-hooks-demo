@@ -21,6 +21,8 @@ export default function Timer() {
     window.clearInterval(timer.current);
     timer.current = null;
   }, []);
+  
+  
 
   return (
     <div>

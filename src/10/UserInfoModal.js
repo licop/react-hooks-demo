@@ -20,6 +20,7 @@ function UserInfoModal({ visible, userId, ...rest }) {
   );
 }
 
+// 使用容器模式，实现按条件执行 Hooks
 export default function UserInfoModalWrapper({ visible, ...rest }) {
   if (!visible) return null;
   return <UserInfoModal visible {...rest} />;
